@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yenipp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_mic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_speech_to_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/konusmak_icin_dokun"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintTop_toTopOf="@id/iv_mic"
+            app:layout_constraintStart_toEndOf="@id/iv_mic"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnhandsfree"
+        android:layout_width="428dp"
+        android:layout_height="158dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/btnyeni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Sürüş Modu"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/teal_700" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnnormalsurus"
+        android:layout_width="428dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/btnyeni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal Mod"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/teal_700" />
+    </RelativeLayout>
+</LinearLayout>

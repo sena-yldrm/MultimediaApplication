@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgnew"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <ListView
+        android:id="@+id/musicListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B0195050"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingRight="80dp"
+        android:paddingLeft="80dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ic_play" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ic_pause" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ic_next" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hız: "
+        android:background="#989F9F"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:paddingLeft="12dp"
+        android:layout_gravity="center" />
+
+
+
+</LinearLayout>
